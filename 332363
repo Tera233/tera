@@ -1,0 +1,142 @@
+
+<body background="bg.jpeg" width="100%" height="100%">
+	</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+	<img src="pic1.jpeg" id="p1" width="1420" height="1000">
+	<img src="pic2.jpeg" id="p2" width="1420" height="1000">
+	<img src="pic3.jpeg" id="p3" width="1420" height="1000">
+	<img src="pic4.jpeg" id="p4" width="1420" height="1000">
+	<img src="pic5.jpeg" id="p5" width="1420" height="1000">
+	<img src="pic6.jpeg" id="p6" width="1420" height="1000">
+	<img src="pic7.jpeg" id="p7" width="1420" height="1000">
+	<img src="pic8.jpeg" id="p8" width="1420" height="1000">
+	<img src="pic9.jpeg" id="p9" width="1420" height="1000">
+    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+    
+</body>
+<script>
+  document.getElementById("p1").style.display="none";
+  document.getElementById("p2").style.display="none";
+  document.getElementById("p3").style.display="none";
+  document.getElementById("p4").style.display="none";
+  document.getElementById("p5").style.display="none";
+  document.getElementById("p6").style.display="none";
+  document.getElementById("p7").style.display="none";
+  document.getElementById("p8").style.display="none";
+  document.getElementById("p9").style.display="none";
+
+var x=1;
+
+function picture() {
+    x++;
+}
+setInterval(picture, 3000); 
+
+function picture2(){
+switch(x){
+  case 1:
+    document.getElementById("p1").style.display="inline";
+    document.getElementById("p2").style.display="none";
+  document.getElementById("p3").style.display="none";
+  document.getElementById("p4").style.display="none";
+  document.getElementById("p5").style.display="none";
+  document.getElementById("p6").style.display="none";
+  document.getElementById("p7").style.display="none";
+  document.getElementById("p8").style.display="none";
+  document.getElementById("p9").style.display="none";
+  break;
+  case 2:
+    document.getElementById("p2").style.display="inline";
+    document.getElementById("p1").style.display="none";
+  document.getElementById("p3").style.display="none";
+  document.getElementById("p4").style.display="none";
+  document.getElementById("p5").style.display="none";
+  document.getElementById("p6").style.display="none";
+  document.getElementById("p7").style.display="none";
+  document.getElementById("p8").style.display="none";
+  document.getElementById("p9").style.display="none";
+  break;
+  case 3:
+    document.getElementById("p3").style.display="inline";
+    document.getElementById("p2").style.display="none";
+  document.getElementById("p1").style.display="none";
+  document.getElementById("p4").style.display="none";
+  document.getElementById("p5").style.display="none";
+  document.getElementById("p6").style.display="none";
+  document.getElementById("p7").style.display="none";
+  document.getElementById("p8").style.display="none";
+  document.getElementById("p9").style.display="none";
+  break;
+  case 4:
+    document.getElementById("p4").style.display="inline";
+    document.getElementById("p2").style.display="none";
+  document.getElementById("p3").style.display="none";
+  document.getElementById("p1").style.display="none";
+  document.getElementById("p5").style.display="none";
+  document.getElementById("p6").style.display="none";
+  document.getElementById("p7").style.display="none";
+  document.getElementById("p8").style.display="none";
+  document.getElementById("p9").style.display="none";
+  break;
+  case 5:
+    document.getElementById("p5").style.display="inline";
+    document.getElementById("p2").style.display="none";
+  document.getElementById("p3").style.display="none";
+  document.getElementById("p4").style.display="none";
+  document.getElementById("p1").style.display="none";
+  document.getElementById("p6").style.display="none";
+  document.getElementById("p7").style.display="none";
+  document.getElementById("p8").style.display="none";
+  document.getElementById("p9").style.display="none";
+  break;
+  case 6:
+    document.getElementById("p6").style.display="inline";
+    document.getElementById("p2").style.display="none";
+  document.getElementById("p3").style.display="none";
+  document.getElementById("p4").style.display="none";
+  document.getElementById("p5").style.display="none";
+  document.getElementById("p1").style.display="none";
+  document.getElementById("p7").style.display="none";
+  document.getElementById("p8").style.display="none";
+  document.getElementById("p9").style.display="none";
+  break;
+  case 7:
+    document.getElementById("p7").style.display="inline";
+    document.getElementById("p2").style.display="none";
+  document.getElementById("p3").style.display="none";
+  document.getElementById("p4").style.display="none";
+  document.getElementById("p5").style.display="none";
+  document.getElementById("p6").style.display="none";
+  document.getElementById("p1").style.display="none";
+  document.getElementById("p8").style.display="none";
+  document.getElementById("p9").style.display="none";
+  break;
+  case 8:
+    document.getElementById("p8").style.display="inline";
+    document.getElementById("p2").style.display="none";
+  document.getElementById("p3").style.display="none";
+  document.getElementById("p4").style.display="none";
+  document.getElementById("p5").style.display="none";
+  document.getElementById("p6").style.display="none";
+  document.getElementById("p7").style.display="none";
+  document.getElementById("p1").style.display="none";
+  document.getElementById("p9").style.display="none";
+  break;
+  case 9:
+    document.getElementById("p9").style.display="inline";
+    document.getElementById("p2").style.display="none";
+  document.getElementById("p3").style.display="none";
+  document.getElementById("p4").style.display="none";
+  document.getElementById("p5").style.display="none";
+  document.getElementById("p6").style.display="none";
+  document.getElementById("p7").style.display="none";
+  document.getElementById("p8").style.display="none";
+  document.getElementById("p1").style.display="none";
+  break;
+  default:
+    x=1;
+  break;
+}
+}
+setInterval(picture2,100)
+
+</script>
