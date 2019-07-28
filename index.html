@@ -11,6 +11,7 @@
 var num = 0;
 var images=["pic1.jpeg","pic2.jpeg","pic3.jpeg","pic4.jpeg","pic5.jpeg","pic6.jpeg","pic7.jpeg","pic8.jpeg","pic9.jpeg"];
 function next() {
+  document.write(num);
   var slider = document.getElementById("slider");
   num++;
   if(num >= images.length) {
@@ -18,5 +19,5 @@ function next() {
   }
   slider.src = images[num];
   }
-  setInterval(next,2000)
+  setInterval(next,200)
 </script>
