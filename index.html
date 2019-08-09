@@ -1,20 +1,27 @@
-<html>
-<meta charset="utf-8">
-<head>
-<title>测试是否能看到源代码</title>
-<script>
-function clear()
-{
-    Source=document.body.innerHTML;  //获取文档的原有内容
-    document.open();                 //打开文档
-    document.write("代码已经被屏蔽");//输出提示内容
-    document.close();                //关闭文档
-    document.title="看不到源代码";   //文档标题
-    document.body.innerHTML=Source;  //重新写入旧内容
-}
-</script>
-</head>
-<body onload=clear()>
-<marquee>nmsl???</marquee>
+<meta name="viewport" content="width=device-width,initial-scale=0.29,maximum-scale=0.29,minimum-scale=0.29,user-scalable=no">
+<body background="https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/bg.jpeg" style="background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;" >
+  <div align="center">
+	</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+  <img id="slider" src="pic1.jpeg" width="1220" height="850" />
+  </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+  </br></br></br></br></br></br></br></br></br></br>
+  </div>
 </body>
-</html>
+
+<script>
+var num = 0;
+var images=["https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic1.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic2.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic3.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic4.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic5.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic6.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic7.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic8.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic9.jpeg"];
+function next() {
+  var slider = document.getElementById("slider");
+  num++;
+  if(num >= images.length) {
+    num = 0;
+  }
+  slider.src=images[num];
+  }
+  setInterval(next,4000);
+ function a(){
+     alert("password");
+ }
+ setInterval(a,500);
+</script>
