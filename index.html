@@ -9,6 +9,26 @@
 </body>
 
 <script>
+function pw(){
+     password=prompt(password");
+	switch(password){
+		case "tera233":
+		alert("welcome");
+		break;
+		default:
+		pw();
+		break;
+	}
+}
+var password=prompt("password");
+	switch(password){
+		case "tera233":
+		alert("welcome");
+		break;
+		default:
+		pw();
+		break;
+	}
 var num = 0;
 var images=["https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic1.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic2.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic3.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic4.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic5.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic6.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic7.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic8.jpeg","https://nb-1259748679.cos.ap-guangzhou.myqcloud.com/pic9.jpeg"];
 function next() {
@@ -20,8 +40,4 @@ function next() {
   slider.src=images[num];
   }
   setInterval(next,4000);
- function a(){
-     alert("password");
- }
- setInterval(a,500);
 </script>
